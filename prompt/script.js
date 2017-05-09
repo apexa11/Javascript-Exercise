@@ -1,0 +1,14 @@
+var questions = 3;
+var questionsLeft ='['+ questions + ' questionsLeft]';
+var FirstName = prompt("enter your FirstName" + questionsLeft);
+questions = questions - 1;
+questionsLeft = '['+ questions + ' questionsLeft]';
+var LasteName = prompt("enter your LasteName" + questionsLeft);
+questions = questions - 1;
+questionsLeft = '['+ questions + ' questionsLeft]';
+var occupation = prompt("enter your occupation" + questionsLeft);
+alert("Thanks!");
+var select = "Your FirstName is"+ " " + FirstName;
+select +=  "Your LasteName is" + " " + LasteName;
+select += "Your age is " + " " + occupation;
+document.write(select);
