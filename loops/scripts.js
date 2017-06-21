@@ -1,10 +1,13 @@
-function randomNum(num){
-    return Math.floor(Math.random() * num)+1;
+var secret = prompt("whats your secret name?");
+var count = 0;
+while (count <5){
+    if(secret == 'apexa'){
+        alert("thats your name "+ secret)
+        break;
+    }
+    else{
+        var secret = prompt("try again !!")
+    }
+    count +=1;
 }
-
-var counter = 0;
-while(counter<10){
-    var randnum = randomNum(6);
-    document.write(randnum);
-    counter = counter+1;
-}
+document.write("you know your number! wel come!!")
